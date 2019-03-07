@@ -28,23 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.lalumno = new System.Windows.Forms.Label();
             this.lnota = new System.Windows.Forms.Label();
             this.talumno = new System.Windows.Forms.TextBox();
             this.tnota = new System.Windows.Forms.TextBox();
             this.lista = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
+            this.BGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(565, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Guardar alumno";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // lalumno
             // 
@@ -96,18 +87,28 @@
             this.label.Size = new System.Drawing.Size(200, 13);
             this.label.TabIndex = 7;
             // 
+            // BGuardar
+            // 
+            this.BGuardar.Location = new System.Drawing.Point(581, 75);
+            this.BGuardar.Name = "BGuardar";
+            this.BGuardar.Size = new System.Drawing.Size(96, 46);
+            this.BGuardar.TabIndex = 8;
+            this.BGuardar.Text = "Guardar alumno";
+            this.BGuardar.UseVisualStyleBackColor = true;
+            this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BGuardar);
             this.Controls.Add(this.label);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.tnota);
             this.Controls.Add(this.talumno);
             this.Controls.Add(this.lnota);
             this.Controls.Add(this.lalumno);
-            this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -116,14 +117,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lalumno;
         private System.Windows.Forms.Label lnota;
         private System.Windows.Forms.TextBox talumno;
         private System.Windows.Forms.TextBox tnota;
         private System.Windows.Forms.Label lista;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Button BGuardar;
     }
 }
 
