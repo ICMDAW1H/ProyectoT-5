@@ -1,6 +1,6 @@
 ﻿namespace practicagit
 {
-    partial class Form1
+    partial class ClasesAlumnosyAlumno
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -30,11 +30,12 @@
         {
             this.lalumno = new System.Windows.Forms.Label();
             this.lnota = new System.Windows.Forms.Label();
-            this.talumno = new System.Windows.Forms.TextBox();
+            this.aluNombre = new System.Windows.Forms.TextBox();
             this.tnota = new System.Windows.Forms.TextBox();
             this.lista = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
             this.BGuardar = new System.Windows.Forms.Button();
+            this.listaAlumnos = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // lalumno
@@ -55,12 +56,12 @@
             this.lnota.TabIndex = 2;
             this.lnota.Text = "Nota:";
             // 
-            // talumno
+            // aluNombre
             // 
-            this.talumno.Location = new System.Drawing.Point(44, 52);
-            this.talumno.Name = "talumno";
-            this.talumno.Size = new System.Drawing.Size(270, 20);
-            this.talumno.TabIndex = 3;
+            this.aluNombre.Location = new System.Drawing.Point(44, 52);
+            this.aluNombre.Name = "aluNombre";
+            this.aluNombre.Size = new System.Drawing.Size(270, 20);
+            this.aluNombre.TabIndex = 3;
             // 
             // tnota
             // 
@@ -97,16 +98,25 @@
             this.BGuardar.UseVisualStyleBackColor = true;
             this.BGuardar.Click += new System.EventHandler(this.BGuardar_Click);
             // 
+            // listaAlumnos
+            // 
+            this.listaAlumnos.Location = new System.Drawing.Point(44, 149);
+            this.listaAlumnos.Name = "listaAlumnos";
+            this.listaAlumnos.Size = new System.Drawing.Size(556, 157);
+            this.listaAlumnos.TabIndex = 9;
+            this.listaAlumnos.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listaAlumnos);
             this.Controls.Add(this.BGuardar);
             this.Controls.Add(this.label);
             this.Controls.Add(this.lista);
             this.Controls.Add(this.tnota);
-            this.Controls.Add(this.talumno);
+            this.Controls.Add(this.aluNombre);
             this.Controls.Add(this.lnota);
             this.Controls.Add(this.lalumno);
             this.Name = "Form1";
@@ -119,11 +129,12 @@
         #endregion
         private System.Windows.Forms.Label lalumno;
         private System.Windows.Forms.Label lnota;
-        private System.Windows.Forms.TextBox talumno;
+        private System.Windows.Forms.TextBox aluNombre;
         private System.Windows.Forms.TextBox tnota;
         private System.Windows.Forms.Label lista;
         private System.Windows.Forms.Label label;
         private System.Windows.Forms.Button BGuardar;
+        private System.Windows.Forms.RichTextBox listaAlumnos;
     }
 }
 
